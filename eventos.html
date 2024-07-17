@@ -19,19 +19,50 @@
   </header>
 
 <h1>Inscreva-se</h1>
-
-<form>
-  Evento <select name="evento">
-    <option>--Selecione--</option>
-    <option>Voe sem asas</option>
-    <option>Festa Junina</option>
-    <option>Semana de tecnologia</option>
+<fieldset
+  <form name="evento">
+    Evento <select name="evento">
+      <option>--Selecione--</option>
+      <option>Voe sem asas</option>
+      <option>Festa Junina</option>
+     <option>Semana de tecnologia</option>
     
-  </select>
-</form>
-
+   </select>
+  </form>
+</fieldset>
   
-  <script src="script.js"></script>
+<fieldset name="Informações de acesso">
+  <legend>Informações de acesso</legend>
+  <form>
+    <br>
+    Usuário: <input type="text" id="usuario" name="usuario" required><br> <br>
+    Senha: <input type="text" id="senha" name="senha" required><br>  <br>
+    Confirme a senha: <input type="password" id="confirmeasenha" name="confirmeasenha" required><br>  <br>
+  </form>
+</fieldset>
+
+  <fieldset name="Informações Pessoais">
+    <legend>Informações Pessoais</legend>
+    <form>
+      <br>
+      Nome completo: <input type="text" id="usuario" name="usuario" required><br> <br>
+      Email: <input type="text" id="senha" name="senha" required><br>  <br>
+      Celular: <input type="password" id="confirmeasenha" name="confirmeasenha" required> (99) 99999-9999 <br>  <br>
+      <fieldset name="Sexo">
+        <legend>Sexo</legend>
+          <input type="radio" name="sexo" value="masculino"> Masculino
+          <input type="radio" name="sexo" value="feminino"> Feminino
+      </fieldset>
+      <br>
+      Data de Nascimento: <input type=date id="data" name="data" required><br><br>
+      Cor favorita: <input type="color" id="cor" name="cor" required><br><br>
+      Perfil no Github: <input type="text" id="usuario" name="usuario" placeholder="https://github.com/usuario" required><br><br>
+    </form>
+  </fieldset>
+<br>
+<button type="submit" form="evento">Inscrever</button>
+<button type="reset" value="Limpar">Limpar</button>
+<script src="script.js"></script>
 </body>
 
 </html>
