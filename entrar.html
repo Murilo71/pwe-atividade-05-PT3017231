@@ -19,10 +19,21 @@
   </header>
 
   <h1>Entrar</h1>
-  <form>
-    Usuário:<input type="text" id="usuario" name="usuario" required><br><br>
-    Senha:<input type="password" id="senha" name="senha" required><br><br>
-    <button type="submit" form="evento">Enviar</button> <a href="index.html">Esqueci a senha</a>
+  <form method="POST">
+      <div>
+          <label for="entrar-usuario">Usuário</label>
+          <input type="text" name="usuario" id="entrar-usuario" required />
+      </div>
+      <br>
+      <div>
+          <label for="entrar-senha">Senha</label>
+          <input type="password" name="senha" id="entrar-senha" required />
+      </div>
+      <br>
+      <div>
+          <button type="submit">Entrar</button>
+          <a href="#">Esqueci a senha</a>
+      </div>
   </form>
   <br><br><br>
   <a href="https://www.facebook.com/ifsppirituba"><img src="https://github.com/pwe-redes/pwe_imagens/blob/master/facebook.png?raw=true" width="41" height="43" title="IFSP Facebook" alt="IFSP Facebook"></a>
